@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link  rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link  rel="stylesheet" href="css/animation.css">-->
+    <!--<link  rel="stylesheet" href="css/animation-ie-fix.css">-->
+    <link  rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/showcontent.js"></script>
+</head>
+<body>
+    <div class="containNav">
+    <div class="container Topbar">
+        <div class="_icon"></div>
+        <div class="_name">
+            <p class="_above">青年创业者联盟</p>
+            <p class="_under"><span class="span1">Youth startUp Union |</span> <span class="span2">JOIN US</span></p>
+        </div>
+        <div class="_search">
+            <p>状态</p>
+            <p>状态</p>
+            <p>状态</p>
+            <input type="text" placeholder="关键字查询">
+        </div>
+    </div>
+    </div>
+
+    <nav class="navbar container-fluid navbar-inverse" role="navigation">
+
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav nav-1">
+                    <li class="active main_"><a href="#" onclick="switchPage('main')">主页</a></li>
+                    <li class="path_"><a href="#" onclick="switchPage('path')">科技立项</a></li>
+                    <li class="member_"><a href="#" onclick="switchPage('member')">联盟成员</a></li>
+                    <li class="base_"><a href="#" onclick="switchPage('base')">联盟基地</a></li>
+                    <li class="service_"><a href="#" onclick="switchPage('service')">支持服务</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+
+    </nav>
+
+    <!--tupuanlunbo-->
+    <div id="carousel">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img style="width: 100%" src="images/collPic1.png" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img style="width: 100%" src="images/collPic2.png" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img style="width: 100%" src="images/collPic3.png" alt="...">
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!--主页内容-->
+
+    <div class="container main" id="main">
+        <div class="row" id="maincontent">
+            <div class="col-xs-3"><!-- 扩展项目一栏 -->
+                <div class="row row1">
+                    <div class="row1-title">扩展项目</div>
+                    <div class="pro">
+                        <h1>1</h1>
+                        <div class="subhead">
+                            <h5>所有高校技术</h5>
+                            <h4>转移中心</h4>
+                        </div>
+
+                        <div class="detials">详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息</div>
+                    </div>
+                    <div class="pro">
+                        <h1>2</h1>
+                        <div class="subhead">
+                            <h5>传统企业转型</h5>
+                            <h4>升级研讨</h4>
+                        </div>
+                        <div class="detials">详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息</div>
+                    </div>
+                    <div class="pro">
+                        <h1>3</h1>
+                        <div class="subhead">
+                            <h5>企业与名校学生</h5>
+                            <h4>对话论坛</h4>
+                        </div>
+                        <div class="detials">详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息</div>
+                    </div>
+
+                </div>
+                <!--<div class="row row2">-->
+                    <!--<img src="images/connectPic.png">-->
+                <!--</div>-->
+            </div>
+
+            <div class="col-xs-9">
+                <div class="right-content">
+                    <div class="content-title">
+                        <ul>
+                            <a href="javascript:changePage1()" ><li class="onactive" id="t1">创客活动</li></a>
+                            <a href="javascript:changePage2()" ><li id="t2">联盟主办</li></a>
+                            <a href="javascript:changePage3()"><li id="t3">政策传递</li></a>
+                            <a href="javascript:changePage4()"><li id="t4">资本对接</li></a>
+                        </ul>
+
+                    </div>
+                    <div id="collect">
+                        <div class="content">
+
+                            <div class="row" id="active1" onclick="showcontent(arctical1)">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【活动1】2016全国大学生创新创业峰会在京举办</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【活动2】2016全国双创活动周主会场设在深圳</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【活动3】2016长三角创客嘉年华上午开幕 上海完成“帮扶引领创业1万人”</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【活动4】首届中国创新创业大赛创客大赛深圳光明举办颁奖仪式</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【活动5】投资巨头聚焦2016创业大赛：帮“创客”找“天使”</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="show-more">
+                           <a href=""> <div class="bottom-right">显示更多>></div></a>
+                       </div>
+                   </div>
+                 <div id="notify" style="display: none;">
+                     <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【联盟主办1】传统企业“互联网+”转型升级研讨茶话会顺利举办</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【联盟主办2】山东省青年科技创新创业联盟成立大会在山东大学举行</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【活动通知3】活动名称活动名称</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【活动通知4】活动名称活动名称</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【活动通知5】活动名称活动名称</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="show-more">
+                           <a href=""> <div class="bottom-right">显示更多>></div></a>
+                       </div>
+                 </div>
+                 <div id="policy" style="display: none;">
+                    <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【政府政策1】活动名称活动名称</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【政府政策2】活动名称活动名称</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【政府政策3】活动名称活动名称</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【政府政策4】活动名称活动名称</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【政府政策5】活动名称活动名称</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="show-more">
+                           <a href=""> <div class="bottom-right">显示更多>></div></a>
+                       </div>
+                 </div>
+                 <div id="joint"  style="display: none;">
+                     <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【资本对接1】活动名称活动名称</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【资本对接2】活动名称活动名称</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【资本对接3】活动名称活动名称</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【资本对接4】活动名称活动名称</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content">
+
+                            <div class="row">
+                                <img src="images/p1.jpg" class="content-img col-xs-4">
+                                <div class="col-xs-8 content-details">
+                                    <h3>【资本对接5】活动名称活动名称</h3>
+                                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                                    <small class="bottom-right">2016/11/3</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="show-more">
+                           <a href=""> <div class="bottom-right">显示更多>></div></a>
+                       </div>
+                 </div>
+
+               </div>
+           </div>
+
+
+
+       </div>
+
+   </div>
+
+   <!--member-->
+<div class="animatedParent container member" id="member" style="display: none;">
+    <div class="container _member picIntro" style="display: block;">
+      <img src="images/p2.png" style="width: 100%">
+      <div class="illustration">
+        <h3>成员介绍</h3>
+        <hr/>
+        <p>介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</p>
+      </div>
+    </div>
+    <div class="animated bounceInRight row">
+        <div class="col-xs-4">
+            <div class="member-content group1">
+                <div class="member-content-detail group1-detail">
+                    <h3>关于我们</h3>
+                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                    <a href="">点击此处进入团队页面</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="member-content group2">
+                <div class="member-content-detail group2-detail">
+                    <h3>关于我们</h3>
+                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                    <a href="">点击此处进入团队页面</a>
+                </div>
+            </div>
+                </div>
+        <div class="col-xs-4">
+            <div class="member-content group3">
+                <div class="member-content-detail group3-detail">
+                    <h3>关于我们</h3>
+                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                    <a href="">点击此处进入团队页面</a>
+                </div>
+            </div>
+                </div>
+
+    </div>
+  <div class="row animated bounceInLeft">
+        <div class="col-xs-4">
+            <div class="member-content group4">
+                <div class="member-content-detail group4-detail">
+                    <h3>关于我们</h3>
+                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                    <a href="">点击此处进入团队页面</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="member-content group5">
+                <div class="member-content-detail group5-detail">
+                    <h3>关于我们</h3>
+                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                    <a href="">点击此处进入团队页面</a>
+                </div>
+            </div>
+                </div>
+        <div class="col-xs-4">
+            <div class="member-content group6">
+                <div class="member-content-detail group6-detail">
+                    <h3>关于我们</h3>
+                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                    <a href="">点击此处进入团队页面</a>
+                </div>
+            </div>
+                </div>
+
+    </div>
+  <div class="row animated bounceInRight">
+        <div class="col-xs-4">
+            <div class="member-content group7">
+                <div class="member-content-detail group7-detail">
+                    <h3>关于我们</h3>
+                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                    <a href="">点击此处进入团队页面</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="member-content group8">
+                <div class="member-content-detail group8-detail">
+                    <h3>关于我们</h3>
+                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                    <a href="">点击此处进入团队页面</a>
+                </div>
+            </div>
+                </div>
+        <div class="col-xs-4">
+            <div class="member-content group9">
+                <div class="member-content-detail group9-detail">
+                    <h3>关于我们</h3>
+                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                    <a href="">点击此处进入团队页面</a>
+                </div>
+            </div>
+                </div>
+
+    </div>
+
+
+</div>
+
+
+
+<div class="container path picIntro" id="path" style="display: none">
+      <img src="images/p1.png" style="width: 100%">
+      <div class="illustration">
+        <h3>科技立项通道</h3>
+        <hr/>
+        <p>介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</p>
+      </div>
+</div>
+
+<div class="container base picIntro" id="base" style="display: none">
+       <img src="images/p3.png" style="width: 100%">
+       <div class="illustration">
+        <h3>联盟基地</h3>
+        <hr/>
+        <p>介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</p>
+       </div>
+</div>
+
+<div class="container service picIntro" id="service" style="display: none">
+       <img src="images/p4.png" style="width: 100%">
+       <div class="illustration">
+        <h3>软性服务</h3>
+        <hr/>
+        <p>介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</p>
+       </div>
+</div>
+
+
+<!--footer-->
+
+<div class="container-fluid footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="footer-content">
+                    <h3>关于我们</h3>
+                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="footer-content">
+                    <h3>联系我们</h3>
+                    <p>活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介活动简介</p>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="footer-content">
+                    <h3>二维码</h3>
+                    <div class="twoD"></div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+<script>
+    var a=1;
+    function changePage1(){
+        a=1;
+        changeactive();
+    }
+    function changePage2(){
+        a=2;
+        changeactive();
+    }
+    function changePage3(){
+        a=3;
+        changeactive();
+    }
+    function changePage4(){
+        a=4;
+        changeactive();
+    }
+
+    function changeactive(){
+        $(".onactive").removeAttr("class");
+        $("#collect").css('display','none');
+        $("#notify").css('display','none');
+        $("#policy").css('display','none');
+        $("#joint").css('display','none');
+        if(a==1){
+            $("#t1").addClass("onactive");
+            $("#collect").css('display','block')
+        } 
+        if(a==2){
+            $("#t2").addClass("onactive");
+            $("#notify").css('display','block')
+        } 
+        if(a==3){
+            $("#t3").addClass("onactive");
+            $("#policy").css('display','block')
+        } 
+        if(a==4) {
+            $("#t4").addClass("onactive");
+            $("#joint").css('display','block')
+        }
+    }
+</script>
+<script type="text/javascript" src="js/index.js"></script>
+<!--<script type="text/javascript" src="js/css3-animate-it.js"></script>-->
+</html>
