@@ -113,16 +113,14 @@ body{
     background-repeat:repeat;
 }
 
-.row1 {
+.row1{
     background-color: #ffffff;
-    height: 800px;
+    height: 900px;
     text-align: center;
     width: 100%;
-
-
 }
-.row2 {
-    /*background-color: #ffffff;*/
+/*.row2 {
+    
     height: 300px;
     text-align: center;
     margin-top: 20px;
@@ -130,7 +128,7 @@ body{
 }
 .row2 img{
     width: 100%;
-}
+}*/
 .right-content{
     margin-left: 10px;
     background-color: #f7f7f7;
@@ -153,6 +151,9 @@ body{
 .pro{
     display: inline-block;
     width: 80%;
+    /*background-color: green;*/
+    margin-top: 20px;
+    border: 1px solid #DBDBDB;
 
 }
 .pro h1{
@@ -160,42 +161,34 @@ body{
     font-weight: bold;
     line-height: 50px;
     font-size: 3em;
-}
-.pro h5{
-    display: block;
-    margin: 0;
-
-    font-weight: bold;
-
-}
-.pro h4{
-    display: inline-block;
-    font-weight: bold;
-    /*line-height: 30px;*/
-    margin: 0;
-}
+}   
 .pro>.subhead{
     display: inline-block;
     height: 50px;
     margin: 0;
-    margin-left: 5px;
+    margin:0px 5px;
     font-weight: bold;
 }
+.pro>.pic{
+    width: 100%;
+}
+.pro>.pic img{
+    width: 90%;
+}
 .pro>.detials{
-    letter-spacing: 2px;
-    line-height: 1.5em;
+    margin-top: 5px;
+    margin:0px 5px;
+    /*letter-spacing: 2px;*/
 }
-.detials{
-    /*white-space:nowrap;*/
-    /*overflow:hidden;*/
-    text-overflow:ellipsis;
+.detials>._showmore{
+    color: blue;
+    cursor: pointer;
 }
-
 .main{
     margin-top: 10px;
 }
 .right-content{
-    /*height: 1120px;*/
+    height: 900px;
 }
 .content-title ul{
     margin: 0 auto;
@@ -382,4 +375,8 @@ body{
 #artical{
     background-color: white;
     margin-top: 50px;
+}
+
+a{
+    cursor: pointer;
 }
