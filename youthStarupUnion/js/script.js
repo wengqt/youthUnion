@@ -20,4 +20,3 @@ function switchPage(idname){
 	$(".nav").find(".active").removeClass("active");
 	$("."+idname+"_").addClass("active");
 }
-
