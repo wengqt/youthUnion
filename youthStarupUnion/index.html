@@ -11,6 +11,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/showcontent.js"></script>
+    <script type="text/javascript" src="js/showmore.js"></script>
 </head>
 <body>
     <div class="containNav">
@@ -95,32 +96,26 @@
             <div class="col-xs-3"><!-- 扩展项目一栏 -->
                 <div class="row row1">
                     <div class="row1-title">扩展项目</div>
-                    <div class="pro">
+                      <div class="pro">
                         <h1>1</h1>
                         <div class="subhead">
-                            <h5>所有高校技术</h5>
-                            <h4>转移中心</h4>
+                            <p>传统企业“互联网+”转型升级研讨茶话会顺利举办</p>
                         </div>
-
-                        <div class="detials">详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息</div>
-                    </div>
-                    <div class="pro">
+                        <div class="pic">
+                            <img src="images/chahua.jpg">
+                        </div>
+                        <div class="detials">2016年11月23日下午,山东省青年科技创新创业联盟（以下简称“联盟”）......<span class="_showmore" onclick="showcontent(articalt2)">查看更多</span></div>
+                      </div>
+                      <div class="pro">
                         <h1>2</h1>
                         <div class="subhead">
-                            <h5>传统企业转型</h5>
-                            <h4>升级研讨</h4>
+                            <p>2016中美创客论坛暨中美创新创业大赛闭幕</p>
                         </div>
-                        <div class="detials">详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息</div>
-                    </div>
-                    <div class="pro">
-                        <h1>3</h1>
-                        <div class="subhead">
-                            <h5>企业与名校学生</h5>
-                            <h4>对话论坛</h4>
+                        <div class="pic">
+                            <img src="images/innovation.jpg">
                         </div>
-                        <div class="detials">详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息详细信息</div>
-                    </div>
-
+                        <div class="detials">4月9日下午,“2016中美创客论坛暨中美创新创业大赛”在青岛闭幕......<span class="_showmore" onclick="showcontent(articalt1)">查看更多</span></div>
+                      </div>
                 </div>
                 <!--<div class="row row2">-->
                     <!--<img src="images/connectPic.png">-->
@@ -187,7 +182,7 @@
                             </div>
 
                         </div>
-                        <div class="content">
+                        <div class="content" style="display: none;">
 
                             <div class="row" onclick="showcontent(artical5)">
                                 <img src="images/p1.jpg" class="content-img col-xs-4">
@@ -199,7 +194,7 @@
                             </div>
 
                         </div>
-                         <div class="content">
+                         <div class="content" style="display: none;">
 
                             <div class="row" onclick="showcontent(artical6)">
                                 <img src="images/p1.jpg" class="content-img col-xs-4">
@@ -211,7 +206,7 @@
                             </div>
 
                         </div>
-                         <div class="content">
+                         <div class="content" style="display: none;">
 
                             <div class="row" onclick="showcontent(artical7)">
                                 <img src="images/p1.jpg" class="content-img col-xs-4">
@@ -224,8 +219,8 @@
 
                         </div>
 
-                        <div class="show-more">
-                           <a href=""> <div class="bottom-right">显示更多>></div></a>
+                        <div class="show-more" id="showmore">
+                           <a> <div class="bottom-right">显示更多>></div></a>
                        </div>
                    </div>
                  <div id="notify" style="display: none;">
@@ -255,7 +250,7 @@
                         </div>
 
                         <div class="show-more">
-                           <a href=""> <div class="bottom-right">显示更多>></div></a>
+                           <a> <div class="bottom-right">显示更多>></div></a>
                        </div>
                  </div>
                  <div id="policy" style="display: none;">
@@ -307,7 +302,7 @@
                             </div>
 
                         </div>
-                        <div class="content">
+                        <div class="content" style="display: none;">
 
                             <div class="row" onclick="showcontent(artical14)">
                                 <img src="images/p1.jpg" class="content-img col-xs-4">
@@ -320,7 +315,7 @@
 
                         </div>
                         <div class="show-more">
-                           <a href=""> <div class="bottom-right">显示更多>></div></a>
+                           <a> <div class="bottom-right">显示更多>></div></a>
                        </div>
                  </div>
                  <div id="joint"  style="display: none;">
@@ -374,7 +369,7 @@
                         </div>
 
                         <div class="show-more">
-                           <a href=""> <div class="bottom-right">显示更多>></div></a>
+                           <a> <div class="bottom-right">显示更多>></div></a>
                        </div>
                  </div>
 
@@ -502,15 +497,16 @@
       </div>
 </div>
 
-<div class="container base picIntro" id="base" style="display: none">
-       <img src="images/p3.png" style="width: 100%">
-       <div class="illustration">
-        <h3>联盟基地</h3>
-        <hr/>
-        <p>介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</p>
-       </div>
+<div id="base" style="display: none" class="container">
+            <div class="base picIntro"  >
+                   <img src="images/p3.png" style="width: 100%">
+                   <div class="illustration">
+                    <h3>联盟基地</h3>
+                    <hr/>
+                    <p>叶子咖啡建设面积1200㎡，位于山东大学中心校区体育场下，是由山东省青年科技创新创业联盟联合山东大学团委、山东大学创e家共同建设运营的，致力于打造......</p>
+                   </div>
+            </div>
 </div>
-
 <div class="container service picIntro" id="service" style="display: none">
        <img src="images/p4.png" style="width: 100%">
        <div class="illustration">
