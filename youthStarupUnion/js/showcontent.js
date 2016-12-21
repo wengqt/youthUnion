@@ -3,16 +3,24 @@
  */
 
 function showcontent(art){
+
+
     var main = document.getElementById('maincontent');
     main.style.display='none';
 
     var contain = document.getElementById("main");
     var con = document.createElement("div");
     con.className='container';
+    var a = document.createElement("a");
+    a.innerText =' <<back';
+
+    a.href='javascript:location.reload()';
+    a.className ='top-left';
     var row = document.createElement("div");
     con.innerHTML = art;
     row.className = "row";
     row.id='artical';
+    row.appendChild(a);
     row.appendChild(con);
     contain.appendChild(row);
 
