@@ -16,6 +16,9 @@ function switchPage(idname){
 		if(idname=='main'){
 			carousel.style.display = "block";
 		}
+		if(idname=='base'){
+			showcontent(articall1);
+		}
 
 	$(".nav").find(".active").removeClass("active");
 	$("."+idname+"_").addClass("active");
